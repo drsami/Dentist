@@ -1,0 +1,409 @@
+/* My customized Css for login*/
+
+.border_test
+{
+	border:dotted;
+	border-color:#900;
+}
+
+.border_test1
+{
+	border:dotted;
+	border-color:#000;
+}
+
+.font_set
+{
+	font-family:"Times New Roman", Times, serif;
+}
+
+.header_bckgnd
+{
+	background-image:url(../img/header_bck.jpg);
+	color:#FFC;
+}
+
+/* Large desktop */
+@media (min-width: 1200px)
+{
+	.image_size
+	{
+		height:110px;
+	}
+	.head_l1				/* First line of head portion */
+	{
+		font-size:30px;
+		margin-top:10px;
+		margin-left:525px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+	}
+	.head_l2				/* Second line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:18px;
+		margin-left:570px;
+		margin-top:00px;
+	}
+	.head_l3				/* Third line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:17px;
+		margin-left:375px;
+		margin-top:-4px;
+	}
+	.middle_banner
+	{
+		width:100%;
+		height:20px;
+		margin-top:-10px;
+	}
+	
+}
+
+/* First Customization query*/
+@media (min-width: 980px) and (max-width: 1199px)
+{
+	.image_size
+	{
+		height:110px;
+	}
+	.head_l1				/* First line of head portion */
+	{
+		font-size:28px;
+		margin-top:10px;
+		margin-left:360px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+	}
+	.head_l2				/* Second line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:17px;
+		margin-left:400px;
+		margin-top:10px;
+	}
+	.head_l3				/* Third line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:16px;
+		margin-left:245px;
+		margin-top:-4px;
+	}
+	.middle_banner
+	{
+		width:100%;
+		height:20px;
+		margin-top:-2px;
+	}
+}
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 830px) and (max-width: 979px)
+{
+	.image_size
+	{
+		height:105px;
+	}
+	.head_l1				/* First line of head portion */
+	{
+		font-size:25px;
+		margin-top:10px;
+		margin-left:310px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+	}
+	.head_l2				/* Second line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:18px;
+		margin-left:280px;
+		margin-top:8px;
+	}
+	.head_l3				/* Third line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:16px;
+		margin-top:-5px;
+		margin-left:145px;
+	}
+	.middle_banner
+	{
+		width:100%;
+		height:18px;
+		margin-top:-4px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 829px)
+{
+	.image_size
+	{
+		height:105px;
+	}
+	.head_l1				/* First line of head portion */
+	{
+		font-size:25px;
+		margin-top:10px;
+		margin-left:230px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+	}
+	.head_l2				/* Second line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:18px;
+		margin-left:200px;
+		margin-top:15px;
+	}
+	.head_l3				/* Third line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:16px;
+		margin-left:65px;
+	}
+	.middle_banner
+	{
+		width:100%;
+		height:18px;
+		margin-top:-4px;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px)
+{
+	.image_size
+	{
+		height:100px;
+	}
+	.head_l1				/* First line of head portion */
+	{
+		font-size:20px;
+		margin-top:-90px;
+		margin-left:340px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+	}
+	.head_l2				/* Second line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:16px;
+		margin-left:315px;
+		margin-top:10px;
+	}
+	.head_l3				/* Third line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:13px;
+		margin-left:215px;
+	}
+	.middle_banner
+	{
+		width:100%;
+		height:18px;
+		margin-top:-4px;
+	}
+}
+
+
+@media (min-width: 653px) and (max-width: 766px)
+{
+	.image_size
+	{
+		height:100px;
+	}
+	.head_l1				/* First line of head portion */
+	{
+		font-size:20px;
+		margin-top:-80px;
+		margin-left:305px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+	}
+	.head_l2				/* Second line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:16px;
+		margin-left:280px;
+		margin-top:10px;
+	}
+	.head_l3				/* Third line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:13px;
+		margin-left:175px;
+		margin-top:-8px;
+	}
+	.middle_banner
+	{
+		width:100%;
+		height:18px;
+		margin-top:-8px;
+	}
+	
+}
+
+@media (min-width: 613px) and (max-width: 652px)
+{
+	.image_size
+	{
+		height:90px;
+	}
+	.head_l1				/* First line of head portion */
+	{
+		font-size:18px;
+		margin-top:-80px;
+		margin-left:240px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+	}
+	.head_l2				/* Second line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:15px;
+		margin-left:222px;
+		margin-top:-2px;
+	}
+	.head_l3				/* Third line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:13px;
+		margin-left:140px;
+		margin-top:-8px;
+	}
+}
+
+
+@media (min-width: 557px) and (max-width: 612px)
+{
+	.image_size
+	{
+		height:85px;
+	}
+	.head_l1				/* First line of head portion */
+	{
+		font-size:17px;
+		margin-top:-80px;
+		margin-left:210px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+	}
+	.head_l2				/* Second line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:14px;
+		margin-left:198px;
+		margin-top:-7px;
+	}
+	.head_l3				/* Third line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:13px;
+		margin-left:155px;
+		margin-top:-9px;
+	}
+	.middle_banner
+	{
+		width:100%;
+		height:18px;
+		margin-top:-33px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 556px)
+{
+	.image_size
+	{
+		height:85px;
+	}
+	.head_l1				/* First line of head portion */
+	{
+		font-size:16px;
+		margin-top:-80px;
+		margin-left:180px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+	}
+	.head_l2				/* Second line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:14px;
+		margin-left:145px;
+		margin-top:-7px;
+	}
+	.head_l3				/* Third line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:12px;
+		margin-left:140px;
+		margin-top:-10px;
+	}
+	.middle_banner
+	{
+		width:100%;
+		height:15px;
+		margin-top:-33px;
+	}
+	
+}
+/* Landscape phones and down */
+@media (max-width: 480px)
+{
+	.image_size
+	{
+		height:80px;
+		width:110px;
+	}
+	.head_l1				/* First line of head portion */
+	{
+		font-size:14px;
+		margin-top:-80px;
+		margin-left:170px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+	}
+	.head_l2				/* Second line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:12px;
+		margin-left:150px;
+		margin-top:-8px;
+	}
+	.head_l3				/* Third line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:11px;
+		margin-top:-9px;
+		margin-left:120px;
+	}
+	.middle_banner
+	{
+		width:100%;
+		height:15px;
+		margin-top:-33px;
+	}
+}
+
+@media (max-width: 480px)
+{
+	.image_size
+	{
+		height:110px;
+		width:115px;
+		margin-left:150px;
+	}
+	.head_l1				/* First line of head portion */
+	{
+		font-size:17px;
+		margin-top:5px;
+		margin-left:85px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		
+	}
+	.head_l2				/* Second line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:14px;
+		margin-left:75px;
+		margin-top:-8px;
+	}
+	.head_l3				/* Third line of head portion */
+	{
+		font-family:"Times New Roman", Times, serif;
+		font-size:12px;
+		margin-top:-9px;
+		margin-left:15px;
+	}
+}

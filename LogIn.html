@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+	<head>
+    	
+        <title> Login | ADO </title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="discription" content="login page">
+        <meta name="author" content="Aesthetic Dentistry &amp; Orthodontic">
+        
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.css">
+        <link rel="stylesheet" href="css/responsive.less">
+        <link rel="stylesheet" href="css/flat-ui.css">
+        <link rel="stylesheet" href="css/CustomizeStyle.css">
+        <link rel="stylesheet" href="css/LogIn.css">
+        
+        <script src="js/bootstrap.js"></script>
+		<script src="js/bootstrap-button.js"></script>
+        <script src="js/bootstrap-collapse.js"></script>
+        <script src="js/bootstrap-dropdown.js"></script>
+        <script src="js/jquery-1.7.2.js"></script>
+        <script src="js/jquery-1.9.1.js"></script>
+        <script src="js/jquery-latest.js"></script>
+        <script src="js/jquery-ui-1.10.2.custom.js"></script>
+        <script src="js/scroll.js"></script>
+        
+        <script type="text/javascript">
+			
+			var noConnectionMessage = "Please try again after solving the network problem.";
+			
+			function Checking_Log()
+			{
+				var isOnLine = navigator.onLine;
+				if (isOnLine)
+				{
+         			window.location.assign("sources/SuperAdminHome.html")
+     			}
+				else
+				{
+        			alert(noConnectionMessage);
+     			}
+			}
+		
+		</script>
+        
+    </head>
+    
+    <body background="img/fabric_plaid.png">
+    	
+        <!-- Start of Banner -->
+        <div class="row-fluid header_bckgnd">
+        	
+            <div class="span12 row-fluid">
+            
+            	<div class="span2">
+                	<img src="img/Dental_logo.jpg" class="image_size">
+                </div>
+                
+                <div class="span10">
+                	<p class="head_l1">Aesthetic Dentistry &amp; Orthodontic</p>
+                    <p class="head_l2">Your Friendly "Digital" dental clinic for the whole family</p>
+                   	<p class="head_l3">Road# 32, House# 5/A, Gulshan- 1, Dhaka- 1212, Cell: 017133-549593, 01191642180</p>
+                </div>
+                 	
+            </div>
+            
+        </div>
+        <!-- End of banner -->
+        
+        <!-- Start of middle banner -->
+        <div class="row-fluid">
+        	<img src="img/bannar.gif" class="middle_banner">
+        </div>
+        <!-- End of middle banner -->
+        
+        <!--Start of middle body content-->
+        
+        <div class="container font_set body_set div_align" align="center">
+        
+        	<div class="form-horizontal box_size positioning">
+            
+            	<div class="control-group">
+                	<label class="control-label margin_lbl" for="username">Username : </label>
+                    <div class="controls">
+                    	<input type="text" id="p_username" value="" class="margin_txtbox">
+                    </div>
+                </div>
+                
+                <div class="control-group">
+                	<label class="control-label margin_lbl" for="password">Password : </label>
+                    <div class="controls">
+                    	<input type="password" id="p_password" value="" class="margin_txtbox">
+                    </div>
+                </div>
+                
+                <div class="control-group">
+                	<button class="btn btn-inverse font_set btn_margin" onClick="Checking_Log()">Login</button>
+                	<!--<a href="sources/SuperAdminHome.html" class="btn btn-inverse font_set btn_margin">Login</a>-->
+                </div>
+            
+            </div>
+        
+        </div>
+        
+        <!--Start of middle body content-->
+    
+    </body>
+
+</html>

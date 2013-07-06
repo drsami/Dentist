@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+	<head>
+    	
+        <title> Create User </title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="discription" content="Create User">
+        <meta name="author" content="Aesthetic Dentistry &amp; Orthodontic">
+        
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+        <link rel="stylesheet" href="../css/responsive.less">
+        <!--<link rel="stylesheet" href="../css/flat-ui.css">-->
+        <link rel="stylesheet" href="../css/CustomizeStyle.css">
+        <link rel="stylesheet" href="../css/CreateUser.css">
+        
+        <script src="../js/bootstrap.js"></script>
+		<script src="../js/bootstrap-button.js"></script>
+        <script src="../js/bootstrap-collapse.js"></script>
+        <script src="../js/bootstrap-dropdown.js"></script>
+        <script src="../js/jquery-1.7.2.js"></script>
+        <script src="../js/jquery-1.9.1.js"></script>
+        <script src="../js/jquery-latest.js"></script>
+        <script src="../js/jquery-ui-1.10.2.custom.js"></script>
+        <script src="../js/scroll.js"></script>
+        
+        <script type="text/javascript">
+			var i=0;
+			
+			function ShowMoreMenu()
+			{
+				//alert ("HEllO");
+				var element=document.getElementsByClassName('showhidemenu');
+				if(i%2==0)
+				{
+					for(var index=0;index<element.length;index++)
+					{
+						element[index].style.display="block";
+					}
+			   
+				}
+				else
+				{
+					for(var index=0;index<element.length;index++)
+					{
+						element[index].style.display="none";
+					}
+				}
+				i++;
+			}
+			
+			function regi_button()
+			{
+				window.location.assign("RegisterPatient.html")
+			}
+			
+			function toggle()
+			{
+				var e = document.getElementById("selectList");
+				var takeval = e.options[e.selectedIndex].value;
+				var divToShow = document.getElementById("div1");
+				if(takeval == "new")
+				{
+					divToShow.style.display = "block";
+				}
+				else
+				{
+					divToShow.style.display = "none";
+				}
+			}
+			
+			function showMoreOrLess(thisObj,bonusContent)
+			{
+				var caption = thisObj.innerHTML;
+				//alert(caption);
+				if ( caption == "Create new user")
+				{
+					document.getElementById(bonusContent).style.display = "block";
+					thisObj.innerHTML = "Hide new user panel";
+				}
+				else
+				{
+					document.getElementById(bonusContent).style.display = "none";
+					thisObj.innerHTML = "Create new user";
+				}
+			}
+			
+		</script>
+        
+    </head>
+    
+    <body background="../img/fabric_plaid.png">
+    	
+        <!-- Start of Banner -->
+        <div class="row-fluid header_bckgnd">
+        	
+            <div class="span12 row-fluid">
+            
+            	<div class="span2">
+                	<img src="../img/Dental_logo.jpg" class="image_size">
+                </div>
+                
+                <div class="span10">
+                	<p class="head_l1">Aesthetic Dentistry &amp; Orthodontic</p>
+                    <p class="head_l2">Your Friendly "Digital" dental clinic for the whole family</p>
+                   	<p class="head_l3">Road# 32, House# 5/A, Gulshan- 1, Dhaka- 1212, Cell: 017133-549593, 01191642180</p>
+                </div>
+                 	
+            </div>
+            
+        </div>
+        <!-- End of banner -->
+        
+        <!-- Start of middle banner -->
+        <div class="row-fluid">
+        	<img src="../img/bannar.gif" class="middle_banner">
+        </div>
+        <!-- End of middle banner -->
+        
+        <!--Start of Menu, date, userinfo-->
+        <div class="container-fluid">
+        
+        	<div class="row-fluid">
+            	
+                <div class="span12">
+                	
+                    <!-- side Menu Start -->
+            		<div class="span2" align="center">
+                
+                		<ul class="nav nav-list font_set">
+                        	<li><a href="SuperAdminHome.html" class="side_menu">Home</a></li>
+                        	<li><a href="PatientPage.html" class="side_menu">Patients</a></li>
+                        	<li><a href="PayHistoryParmission.html" class="side_menu">Payment History</a></li>
+                        	<li><a href="#" class="side_menu" onClick="ShowMoreMenu();">Admin Panel</a></li>
+                        
+                        	<li class="showhidemenu"><a href="ManageRole.html" class="side_menu1">Manage Role</a></li>
+                        	<li class="showhidemenu active"><a href="#" class="side_menu1">Create User</a></li>
+                        	<li class="showhidemenu"><a href="ChangePassword.html" class="side_menu1">Change Pass</a></li>    
+                    	</ul>
+                	</div>
+                    <!-- side Menu End -->
+                    
+                    <div class="span10 button_div">
+						
+						<!-- Start of date button -->
+                    	<div class="row-fluid dir_link">
+                        	<p><button class="btn btn-link font_set">Home</button>
+                    		<span>&raquo;</span>
+                    		<button class="btn btn-link font_set">Create User</button>
+                    		</p>
+                        </div>
+                        <!-- End of date button -->
+						
+                        <!-- Start of userinfo -->
+                        <div class="row-fluid font_set user_info_div">
+                        
+                            <div style="border:groove">
+                                <img src="../img/doctor-icon.png" width="70px">
+                            </div>
+                            
+                            <div>
+                                <h5 class="doc_name">DR. Rolly</h5>
+                                <label class="user_roll">Super Admin</label>
+                                <a href="../LogIn.html" class="btn btn-mini btn-primary logout_btn">Logout</a>
+                            </div>
+                                
+                        </div>
+                        <!-- End of userinfo -->
+
+                        <!-- Start of patient schedule -->
+                        
+                       	<div class="row-fluid patient_list_div font_set">
+                            
+                        	<div class="span12" style="border:groove; padding:10px 10px 10px 10px">
+                           
+                           		<!-- Start heading -->
+                                <div class="span12" style="padding:10px 10px 10px 10px">
+                                
+                                    <div class="span1">
+                                        <label><b>Del</b></label>
+                                    </div>
+                                    
+                                    <div class="span2">
+                                        <label><b>User</b></label>
+                                    </div>
+                                    
+                                    <div class="span2">
+                                        <label><b>Role</b></label>
+                                    </div>
+                                    
+                                    <div class="span3">
+                                        <label><b>User Name</b></label>
+                                    </div>
+                                    
+                                    <div class="span2">
+                                        <label><b class="pass_title">Password</b></label>
+                                    </div>
+                                    
+                                    <div class="span2">
+                                        <label><b class="retype_title">Re-Type</b></label>
+                                    </div>
+                             
+                                </div>
+                                <!-- End of Heading -->
+                                
+                                <!-- start #1 --> 
+                                <div class="span12" style="margin-left:00px;">
+                                
+                                    <div class="span1">
+                                        <p class="del_chk_marzin"><input type="checkbox" name="" id=""></p>
+                                    </div>
+                                    
+                                    <div class="span2">
+                                        <input type="text" id="" value="Dr. Rolly" class="user_txtbox">
+                                    </div>
+                                    
+                                    <div class="span2">
+                                        <p>
+                                            <label>
+                                                <select id="select1" class="input-medium">
+                                                    <option value="sadmin">Super Admin</option>
+                                                    <option value="doctor">Doctor</option>
+                                                    <option value="moderator">Moderator</option>
+                                                </select>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="span3">
+                                        <p><label><input type="text" id="" class="user_marzin"></label></p>
+                                    </div>
+                                    
+                                    <div class="span2">
+                                        <p><label><input type="password" id="" class="passbox_marzin"></label></p>
+                                    </div>
+                                    
+                                    <div class="span2">
+                                        <p><label><input type="password" id="" class="retypebox_marzin"></label></p>
+                                    </div>
+                             
+                                </div>
+                                <!-- End #1 -->
+                            	
+                                <!-- start #2 -->
+                                <div class="span12" style="margin-left:00px;">
+                                
+                                    <div class="span1">
+                                        <p class="del_chk_marzin"><input type="checkbox" name="" id=""></p>
+                                    </div>
+                                    
+                                    <div class="span2">
+                                        <input type="text" id="" value="Asma" class="user_txtbox">
+                                    </div>
+                                    
+                                    <div class="span2">
+                                        <p>
+                                            <label>
+                                                <select id="select1" class="input-medium">
+                                                    <option value="sadmin">Super Admin</option>
+                                                    <option value="doctor">Doctor</option>
+                                                    <option value="moderator">Moderator</option>
+                                                </select>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="span3">
+                                        <p><label><input type="text" id="" class="user_marzin"></label></p>
+                                    </div>
+                                    
+                                    <div class="span2">
+                                        <p><label><input type="password" id="" class="passbox_marzin"></label></p>
+                                    </div>
+                                    
+                                    <div class="span2">
+                                        <p><label><input type="password" id="" class="retypebox_marzin"></label></p>
+                                    </div>
+                             
+                                </div>
+                                <!-- End #2 -->
+                                
+                                <div class="span12" style="margin-left:00px; display:none" id="restOfArticle">
+
+                                    <div class="span1">
+                                        <p class="del_chk_marzin"><input type="checkbox" name="" id=""></p>
+                                    </div>
+                                    
+                                    <div class="span2">
+                                        <input type="text" id="" value="" class="user_txtbox">
+                                    </div>
+                                    
+                                    <div class="span2">
+                                        <p>
+                                            <label>
+                                                <select id="selectList" name="oselect" class="input-medium combo_box_margin" onChange="toggle()">
+                                                    <option value="sadmin">Super Admin</option>
+                                                    <option value="doctor">Doctor</option>
+                                                    <option value="moderator">Moderator</option>
+                                                    <option value="new">New</option>
+                                                </select>
+                                            </label>
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="span3">
+                                        <p><label><input type="text" id="" class="user_marzin"></label></p>
+                                    </div>
+                                    
+                                    <div class="span2">
+                                        <p><label><input type="password" id="" class="passbox_marzin"></label></p>
+                                    </div>
+                                    
+                                    <div class="span2">
+                                        <p><label><input type="password" id="" class="retypebox_marzin"></label></p>
+                                    </div>
+                             
+                                </div>
+                                
+                                <!-- start of new role -->
+                                <div id="div1" style="display:none"> 
+                                
+                                    <label for="title"><b>Role Name</b></label>
+                                    <label><input type="text" id="rolename" value=""></label>
+                                    <label for="title"><b>Permissions</b></label>
+                                    
+                                    <div class="row-fluid  role_info_div font_set">
+                                                
+                                        <div class="span12" style="margin-left:-5px;">
+                                    
+                                            <div class="span3" align="center">
+                                                <label>Print</label>
+                                                <p><input type="checkbox" id="" name=""></p>
+                                            </div>
+                                        
+                                            <div class="span3" align="center">
+                                                <label>View Payment</label>
+                                                <p><input type="checkbox" id="" name=""></p>
+                                            </div>
+                                        
+                                            <div class="span3" align="center">
+                                                <label>Prescribe</label>
+                                                <p><input type="checkbox" id="" name=""></p>
+                                            </div>
+                                        
+                                            <div class="span3" align="center">
+                                                <label>Manage Scheduling</label>
+                                                <p><input type="checkbox" id="" name=""></p>
+                                            </div>
+                                            
+                                        </div>
+                                
+                                    </div>
+                                </div>          
+                                <!-- End of new role -->
+                                
+                                <div class="span12 inline" style="margin-left:-5px; margin-top:20px" align="center">
+                                    <button class="btn btn-primary">Update</button>
+                                    <button class="btn btn-primary" onclick="showMoreOrLess(this,'restOfArticle');">Create new user</button>
+                                </div>
+                                
+                            </div>
+                                   
+                        </div>
+                            
+                        <!-- End of patient sescedule -->
+                         
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--Start of Menu, date, userinfo-->
+                
+	</body>
+
+</html>

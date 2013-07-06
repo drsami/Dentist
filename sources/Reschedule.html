@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+	<head>
+    	
+        <title> Rescheduling Patient </title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="discription" content="Rescheduling Patient">
+        <meta name="author" content="Aesthetic Dentistry &amp; Orthodontic">
+        
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+        <link rel="stylesheet" href="../css/responsive.less">
+        <!--<link rel="stylesheet" href="../css/flat-ui.css">-->
+        <link rel="stylesheet" href="../css/CustomizeStyle.css">
+        <link rel="stylesheet" href="../css/Reschedule.css">
+        <link rel="stylesheet" href="../css/jquery-ui.css">
+        
+        <script src="../js/bootstrap.js"></script>
+		<script src="../js/bootstrap-button.js"></script>
+        <script src="../js/bootstrap-collapse.js"></script>
+        <script src="../js/bootstrap-dropdown.js"></script>
+        <script src="../js/jquery-1.7.2.js"></script>
+        <script src="../js/jquery-1.9.1.js"></script>
+        <script src="../js/jquery-latest.js"></script>
+        <script src="../js/jquery-ui-1.10.2.custom.js"></script>
+        <script src="../js/scroll.js"></script>
+        
+        <script type="text/javascript">
+			var i=0;
+			var startvalue=1;
+		  	var endvalue=30;
+			
+			function ShowMoreMenu()
+			{
+				//alert ("HEllO");
+				var element=document.getElementsByClassName('showhidemenu');
+				if(i%2==0)
+				{
+					for(var index=0;index<element.length;index++)
+					{
+						element[index].style.display="block";
+					}
+			   
+				}
+				else
+				{
+					for(var index=0;index<element.length;index++)
+					{
+						element[index].style.display="none";
+					}
+				}
+				i++;
+			}
+			
+			
+			function setPlanValue(value)
+		  	{
+				//alert(value);
+			 	var firstvalue =document.getElementById('setvalue1').value;
+			 	var lastvalue =document.getElementById('setvalue10').value;
+			 	if(value=="L")
+			 	{
+					if(firstvalue!=startvalue)
+				  	{
+						//alert(value);
+					  	for(var index=10;index>=2;index--)
+					  	{
+							var id1='setvalue'+(index-1);
+						  	var id2='setvalue'+index;
+						 	// alert("id1="+id1);
+						  	//alert("id2="+id2);
+						  	value=document.getElementById(id1).value;
+						  	//alert(value);
+						  	document.getElementById(id2).value=value;
+						  	var x=document.getElementById(id2).value;
+						  	//alert(x);
+					  	}
+					 	var x=parseInt(document.getElementById('setvalue1').value);
+					  	x=x-1;
+					  	document.getElementById('setvalue1').value=x;
+					}
+				}
+			 	else
+				{
+					if(lastvalue!=endvalue)
+				  	{
+						//alert("Left");
+					  	for(var index=1;index<=9;index++)
+					  	{
+							var id1='setvalue'+index;
+						  	var id2='setvalue'+(index+1);
+						  	value=document.getElementById(id2).value;
+						 	// alert(id1);
+						  	//alert(id2);
+						  	//alert(value);
+						  	document.getElementById(id1).value=value;
+						  	var value1=document.getElementById(id1).value;
+						  	//alert("new value="+value1);
+					  	}
+					  	var x=parseInt(document.getElementById('setvalue10').value);
+					  	x=x+1;
+					  	document.getElementById('setvalue10').value=x;
+					}
+				}
+			}
+		
+		</script>
+        
+        <script>
+			$(function()
+			{
+				$( "#previous_date" ).datepicker();
+			});
+			
+			$(function()
+			{
+				$( "#new_date" ).datepicker();
+			});
+		</script>
+        
+    </head>
+    	
+        <body background="../img/fabric_plaid.png">
+        	
+            <!-- Start of Banner -->
+        <div class="row-fluid header_bckgnd">
+        	
+            <div class="span12 row-fluid">
+            
+            	<div class="span2">
+                	<img src="../img/Dental_logo.jpg" class="image_size">
+                </div>
+                
+                <div class="span10">
+                	<p class="head_l1">Aesthetic Dentistry &amp; Orthodontic</p>
+                    <p class="head_l2">Your Friendly "Digital" dental clinic for the whole family</p>
+                   	<p class="head_l3">Road# 32, House# 5/A, Gulshan- 1, Dhaka- 1212, Cell: 017133-549593, 01191642180</p>
+                </div>
+                 	
+            </div>
+            
+        </div>
+        <!-- End of banner -->
+        
+        <!-- Start of middle banner -->
+        <div class="row-fluid">
+        	<img src="../img/bannar.gif" class="middle_banner">
+        </div>
+        <!-- End of middle banner -->
+        
+        <!--Start of Menu, date, userinfo, patientinfo-->
+        <div class="container-fluid">
+        	<div class="row-fluid">
+            
+            	<div class="span12">
+                	
+                    <!-- side Menu Start -->
+            		<div class="span2" align="center">
+                
+                		<ul class="nav nav-list font_set">
+                        	<li class="active"><a href="#" class="side_menu">Home</a></li>
+                        	<li><a href="PatientPage.html" class="side_menu">Patients</a></li>
+                        	<li><a href="PayHistoryParmission.html" class="side_menu">Payment History</a></li>
+                        	<li><a href="#" class="side_menu" onClick="ShowMoreMenu();">Admin Panel</a></li>
+                        
+                        	<li class="showhidemenu"><a href="ManageRole.html" class="side_menu1">Manage Role</a></li>
+                        	<li class="showhidemenu"><a href="CreateUser.html" class="side_menu1">Create User</a></li>
+                        	<li class="showhidemenu"><a href="ChangePassword.html" class="side_menu1">Change Pass</a></li>    
+                    	</ul>
+                	</div>
+                    <!-- side Menu End -->
+                    
+                    <div class="span10 button_div">
+                    
+                    	<!-- Start of date button -->
+                    	<div class="btn-toolbar">
+                        	<div class="btn-group">
+                            	<button class="btn button_size1" id="leftbutton" onClick="setPlanValue('L')"><i class="icon-chevron-left"></i></button>
+                                
+                                <input type="button" class="btn button_size2" id="setvalue1" value="1"/>
+                                <input type="button" class="btn button_size2" id="setvalue2" value="2"/>
+                                <input type="button" class="btn button_size2" id="setvalue3" value="3"/>
+                                <input type="button" class="btn button_size2" id="setvalue4" value="4"/>
+                                <input type="button" class="btn button_size2" id="setvalue5" value="5"/>
+                                <input type="button" class="btn button_size2" id="setvalue6" value="6"/>
+                                <input type="button" class="btn button_size2" id="setvalue7" value="7"/>
+                                <input type="button" class="btn button_size2" id="setvalue8" value="8"/>
+                                <input type="button" class="btn button_size2" id="setvalue9" value="9"/>
+                                <input type="button" class="btn button_size2" id="setvalue10" value="10"/>
+                                
+                                <button class="btn button_size1" id="rightbutton" onClick="setPlanValue('R')"><i class="icon-chevron-right"></i></button>
+                                
+                            </div>
+                        </div>
+                        <!-- End of date button -->
+                        
+                        <!-- Start of userinfo -->
+                        <div class="row-fluid font_set user_info_div">
+                        
+                            <div style="border:groove">
+                                <img src="../img/doctor-icon.png" width="70px">
+                            </div>
+                            
+                            <div>
+                                <h5 class="doc_name">DR. Rolly</h5>
+                                <label class="user_roll">Super Admin</label>
+                                <a href="../LogIn.html" class="btn btn-mini btn-primary logout_btn">Logout</a>
+                            </div>
+                                
+                        </div>
+                        <!-- End of userinfo -->
+                        
+                        <!-- Strat of date detail -->
+                        <div class="font_set date_info_div">
+                            <p><h5> Rescheduling for ID <span>10569</span> </h5></p>
+                        </div>
+                        <!-- End of date detail -->
+                        
+                        <!-- Start of Patient reschedule details -->
+                        
+                        <div class="row-fluid patient_detail_div font_set">
+                        
+                        	<!-------------------------------------------------------------------------------->
+                        	<div class="row-fluid">
+                                <div class="span12" style="margin:7px 7px 7px 7px">
+                                
+                                    <!-- Start Patient picture -->
+                                    <div class="span2">
+                                        <img src="../img/patient_1.jpg">
+                                    </div>
+                                    <!-- End Patient picture -->
+                                
+                                    <!-- Start of info -->
+                                    <div class="span7" style="margin-left:00px">
+                                        <label for="name" id="">Mr. Atiqur Rahman</label>
+                                        <label for="id" id="">10569</label>
+                                        <label for="age"><span id="">35 years old</span></label>
+                                        <label for="treatment" id="">Extraction</label>
+                                    </div>
+                                    <!-- End of info -->
+                                    
+                                    <!-- Start of visiting Time -->
+                                    <div class="span3" style="margin-left:00px">
+                                        <label for="vtime" class="visit_time"> Visiting Time <span>5:00 PM</span></label>
+                                    </div>
+                                    <!-- End of visiting Time -->
+                                    
+                                </div>
+                            
+                            </div>
+                            <!-------------------------------------------------------------------------------->
+                            
+                            <!-- Start of previous date and time set -->
+                            
+                            <div class="row-fluid">
+                                <div class="span12" style="margin:7px 7px 7px 7px">
+                                
+                                    <div class="span6">
+                                    	<label><h4>Previous date &amp; time</h4></label>
+                                        <input type="text" id="previous_date" name="previous_date" />
+                                    </div>
+                                    
+                                    <div class="span6 input-append">
+                                    
+                                    	<input type="text" id="" name="" class="input-mini time_marzin" />
+                                        <select class="input-mini time_marzin">
+                                            <option value="am">AM</option>
+                                            <option value="pm">PM</option>
+                                    	</select>
+                                        
+                                    </div>
+                                                                        
+                                </div>
+                            
+                            </div>
+                            
+                            <!-- End of previous date and time set -->
+                            
+                            <!--------------------------------------------------------------------------->
+                            
+                            <!-- Start of New date and time set -->
+                            
+                            <div class="row-fluid">
+                                <div class="span12" style="margin:7px 7px 7px 7px">
+                                
+                                    <div class="span6">
+                                    	<label><h4>new date &amp; time</h4></label>
+                                        <input type="text" id="new_date" name="new_date" />
+                                    </div>
+                                    
+                                    <div class="span6 input-append">
+                                    
+                                    	<input type="text" id="" name="" class="input-mini time_marzin" />
+                                        <select class="input-mini time_marzin">
+                                            <option value="am">AM</option>
+                                            <option value="pm">PM</option>
+                                    	</select>
+                                        
+                                    </div>
+                                                                        
+                                </div>
+                            
+                            </div>
+                            
+                            <!-- End of New date and time set -->
+							
+							<!--------------------------------------------------------------------------->
+							
+                            <!-- Start Reschedule Button -->
+							<div class="row-fluid">
+                            
+                            	<span class="span12">
+                                
+                                	<button class="btn btn-primary pull-right btn_style">Reschedule</button>
+                                
+                                </span>
+                            
+                            </div>
+                            <!-- End Reschedule Button -->
+							
+                        </div>
+                        
+                        <!-- End of Patient reschedule details -->
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <!--End of Menu, date, userinfo, patientinfo-->
+        
+	</body>
+    
+</html>

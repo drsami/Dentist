@@ -1,0 +1,184 @@
+.body_set
+{
+	width:30vw;
+}
+
+/* Large desktop */
+@media (min-width: 1200px)
+{
+	.box_size
+	{
+		width:400px;
+	}
+	.positioning
+	{
+		margin-top:180px;
+		border:groove;
+		padding-top:50px;
+		padding-right:100px;
+	}
+	.btn_margin
+	{
+		margin-top:10px;
+		margin-left:150px;
+	}
+}
+
+@media (min-width: 980px) and (max-width: 1199px)
+{
+	.box_size
+	{
+		width:400px;
+	}
+	.positioning
+	{
+		margin-top:180px;
+		border:groove;
+		padding-top:50px;
+		padding-right:100px;
+	}
+	.btn_margin
+	{
+		margin-top:10px;
+		margin-left:150px;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px)
+{
+	.box_size
+	{
+		width:400px;
+		margin-left:-100px;
+	}
+		.positioning
+	{
+		margin-top:180px;
+		border:groove;
+		padding-top:50px;
+		padding-right:100px;
+	}
+	.btn_margin
+	{
+		margin-left:150px;
+	}
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px)
+{
+	.box_size
+	{
+		width:350px;
+		margin-left:-100px;
+	}
+	.positioning
+	{
+		margin-top:180px;
+		border:groove;
+		padding-top:50px;
+		padding-right:100px;
+	}
+	.margin_lbl
+	{
+		margin-left:-20px;
+	}
+	.margin_txtbox
+	{
+		margin-left:-20px;
+	}
+	.btn_margin
+	{
+		margin-left:150px;
+	}
+}
+
+@media (min-width: 566px) and (max-width: 616px)
+{
+	.div_align
+	{
+		margin-left:120px;
+	}
+	.box_size
+	{
+		width:350px;
+		margin-left:-70px;
+	}
+
+}
+
+@media (min-width: 529px) and (max-width: 656px)
+{
+	.div_align
+	{
+		margin-left:135px;
+	}
+	
+}
+
+@media (min-width: 481px) and (max-width: 528px)
+{
+	.div_align
+	{
+		margin-left:100px;
+		margin-top:-50px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px)
+{
+	.box_size
+	{
+		width:350px;
+		margin-left:-70px;
+	}
+	.positioning
+	{
+		margin-top:180px;
+		border:groove;
+		padding-top:50px;
+		padding-right:100px;
+	}
+
+}
+
+@media (min-width: 400px) and (max-width: 479px)
+{
+	.div_align
+	{
+		margin-left:110px;
+		margin-top:-50px;
+	}
+	.box_size
+	{
+		width:300px;
+		height:150px;
+		margin-left:-100px;
+	}
+	.positioning
+	{
+		margin-top:180px;
+		border:groove;
+		padding-top:50px;
+		padding-right:100px;
+	}
+	.margin_lbl
+	{
+		margin-left:20px;
+		margin-top:-5px;
+	}
+	.margin_txtbox
+	{
+		margin-left:100px;
+		margin-top:-50px;
+	}
+	.btn_margin
+	{
+		margin-left:-35px;
+		margin-top:-20px;
+	}
+
+}

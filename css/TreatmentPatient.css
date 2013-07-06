@@ -1,0 +1,466 @@
+
+
+.side_menu
+{
+	border:groove;
+	margin-top:15px;
+}
+
+.side_menu1
+{
+	border:groove;
+	margin-top:15px;
+	width:100px;
+	background-color:#CCC;
+}
+
+.showhidemenu
+{
+	display:none;
+}
+
+
+@media (min-width: 1200px)
+{
+	.date_div
+	{
+		margin-left:-80px;
+	}
+	.tv_button
+	{
+		width:60px;
+		height:40px;
+	}
+	.tv_button1
+	{
+		min-width:60px;
+		height:40px;
+	}
+	.Tv_plan
+	{
+		margin-top:-10px;
+	}
+	.user_info_div
+	{
+		width:20vw;
+		margin-top:8px;
+		margin-left:-180px;
+	}
+	.doc_name
+	{
+		margin-left:85px;
+		margin-top:-75px;
+	}
+	.user_roll
+	{
+		margin-left:85px;
+		margin-top:-10px;
+		
+	}
+
+	.logout_btn
+	{
+		margin-left:85px;
+		width:60px;
+	}
+	.patient_info_mid
+	{
+		margin-left:00px;
+	}
+	.visit_time
+	{
+		margin-left:-100px;
+	}
+	.patient_list_div
+	{
+		margin-top:20px;
+	}
+	
+}
+
+@media (min-width: 1115px) and (max-width: 1199px)
+{
+	.date_div
+	{
+		margin-left:-80px;
+	}
+	.tv_button
+	{
+		width:60px;
+		height:40px;
+	}
+	.tv_button1
+	{
+		min-width:60px;
+		height:40px;
+	}
+	.Tv_plan
+	{
+		margin-top:-5px;
+	}
+	.user_info_div
+	{
+		width:20vw;
+		margin-top:120px;
+		margin-left:-700px;
+	}
+	.doc_name
+	{
+		margin-left:85px;
+		margin-top:-75px;
+	}
+	.user_roll
+	{
+		margin-left:85px;
+		margin-top:-10px;
+		
+	}
+
+	.logout_btn
+	{
+		margin-left:85px;
+		width:60px;
+	}
+	.patient_info_mid
+	{
+		margin-left:00px;
+	}
+	.visit_time
+	{
+		margin-left:-100px;
+	}
+	.patient_list_div
+	{
+		margin-top:20px;
+	}
+}
+
+@media (min-width: 1089px) and (max-width: 1114px)
+{
+	.tv_button
+	{
+		width:60px;
+		height:40px;
+	}
+	.tv_button1
+	{
+		min-width:60px;
+		height:40px;
+	}
+	.Tv_plan
+	{
+		margin-top:-5px;
+	}
+	.date_div
+	{
+		margin-left:-25px;
+	}
+	.user_info_div
+	{
+		width:20vw;
+		margin-top:120px;
+		margin-left:-655px;
+	}
+	.doc_name
+	{
+		margin-left:85px;
+		margin-top:-75px;
+	}
+	.user_roll
+	{
+		margin-left:85px;
+		margin-top:-10px;
+		
+	}
+
+	.logout_btn
+	{
+		margin-left:85px;
+		width:60px;
+	}
+	.patient_info_mid
+	{
+		margin-left:00px;
+	}
+	.visit_time
+	{
+		margin-left:-100px;
+	}
+	.patient_list_div
+	{
+		margin-top:20px;
+	}
+}
+
+@media (min-width: 989px) and (max-width: 1088px)
+{
+	.tv_button
+	{
+		width:60px;
+		height:40px;
+	}
+	.tv_button1
+	{
+		min-width:60px;
+		height:40px;
+	}
+	.Tv_plan
+	{
+		margin-top:-5px;
+	}
+	.date_div
+	{
+		margin-left:-25px;
+	}
+	.user_info_div
+	{
+		width:20vw;
+		margin-top:120px;
+		margin-left:-625px;
+	}
+	.doc_name
+	{
+		margin-left:85px;
+		margin-top:-75px;
+	}
+	.user_roll
+	{
+		margin-left:85px;
+		margin-top:-10px;
+		
+	}
+
+	.logout_btn
+	{
+		margin-left:85px;
+		width:60px;
+	}
+	.patient_info_mid
+	{
+		margin-left:00px;
+	}
+	.visit_time
+	{
+		margin-left:-100px;
+	}
+	.patient_list_div
+	{
+		margin-top:20px;
+	}
+}
+
+@media (min-width: 780px) and (max-width: 988px)
+{
+	.tv_button
+	{
+		width:60px;
+		height:40px;
+	}
+	.tv_button1
+	{
+		min-width:60px;
+		height:40px;
+	}
+	.Tv_plan
+	{
+		margin-top:20px;
+	}
+	.date_div
+	{
+		margin-left:-95px;
+	}
+	.user_info_div
+	{
+		width:20vw;
+		margin-top:180px;
+		margin-left:-550px;
+	}
+	.doc_name
+	{
+		margin-left:85px;
+		margin-top:-75px;
+	}
+	.user_roll
+	{
+		margin-left:85px;
+		margin-top:-10px;
+		
+	}
+
+	.logout_btn
+	{
+		margin-left:85px;
+		width:60px;
+	}
+	.patient_info_mid
+	{
+		margin-left:00px;
+	}
+	.visit_time
+	{
+		margin-left:-100px;
+	}
+	.patient_list_div
+	{
+		margin-top:20px;
+	}
+}
+
+@media (min-width: 689px) and (max-width: 779px)
+{
+	.tv_button
+	{
+		width:60px;
+		height:40px;
+	}
+	.tv_button1
+	{
+		min-width:60px;
+		height:40px;
+	}
+	.Tv_plan
+	{
+		margin-top:-10px;
+	}
+	.date_div
+	{
+		margin-left:0px;
+	}
+	.user_info_div
+	{
+		width:25vw;
+		margin-top:0px;
+		margin-left:00px;
+	}
+	.doc_name
+	{
+		margin-left:85px;
+		margin-top:-75px;
+	}
+	.user_roll
+	{
+		margin-left:85px;
+		margin-top:-10px;
+		
+	}
+
+	.logout_btn
+	{
+		margin-left:85px;
+		width:60px;
+	}
+	.patient_info_mid
+	{
+		margin-left:00px;
+	}
+	.patient_list_div
+	{
+		margin-top:20px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 688px)
+{
+.tv_button
+	{
+		width:60px;
+		height:40px;
+	}
+	.tv_button1
+	{
+		min-width:60px;
+		height:40px;
+	}
+	.Tv_plan
+	{
+		margin-top:-10px;
+	}
+	.date_div
+	{
+		margin-left:0px;
+	}
+	.user_info_div
+	{
+		width:25vw;
+		margin-top:0px;
+		margin-left:00px;
+	}
+	.doc_name
+	{
+		margin-left:85px;
+		margin-top:-75px;
+	}
+	.user_roll
+	{
+		margin-left:85px;
+		margin-top:-10px;
+		
+	}
+
+	.logout_btn
+	{
+		margin-left:85px;
+		width:60px;
+	}
+	.patient_info_mid
+	{
+		margin-left:00px;
+	}
+	.patient_list_div
+	{
+		margin-top:20px;
+	}
+}
+
+@media (min-width: 40px) and (max-width: 480px)
+{
+	.tv_button
+	{
+		width:60px;
+		height:40px;
+	}
+	.tv_button1
+	{
+		min-width:60px;
+		height:40px;
+	}
+	.Tv_plan
+	{
+		margin-top:-10px;
+	}
+	.date_div
+	{
+		margin-left:0px;
+	}
+	.user_info_div
+	{
+		width:25vw;
+		margin-top:0px;
+		margin-left:00px;
+	}
+	.doc_name
+	{
+		margin-left:85px;
+		margin-top:-75px;
+	}
+	.user_roll
+	{
+		margin-left:85px;
+		margin-top:-10px;
+		
+	}
+
+	.logout_btn
+	{
+		margin-left:85px;
+		width:60px;
+	}
+	.patient_info_mid
+	{
+		margin-left:00px;
+	}
+	.patient_list_div
+	{
+		margin-top:20px;
+	}
+}

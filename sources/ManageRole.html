@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+	<head>
+    	
+        <title> Manage Role </title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="discription" content="Manage Role">
+        <meta name="author" content="Aesthetic Dentistry &amp; Orthodontic">
+        
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/bootstrap-responsive.css">
+        <link rel="stylesheet" href="../css/responsive.less">
+        <!--<link rel="stylesheet" href="../css/flat-ui.css">-->
+        <link rel="stylesheet" href="../css/CustomizeStyle.css">
+        <link rel="stylesheet" href="../css/ManageRole.css">
+        
+        <script src="../js/bootstrap.js"></script>
+		<script src="../js/bootstrap-button.js"></script>
+        <script src="../js/bootstrap-collapse.js"></script>
+        <script src="../js/bootstrap-dropdown.js"></script>
+        <script src="../js/jquery-1.7.2.js"></script>
+        <script src="../js/jquery-1.9.1.js"></script>
+        <script src="../js/jquery-latest.js"></script>
+        <script src="../js/jquery-ui-1.10.2.custom.js"></script>
+        <script src="../js/scroll.js"></script>
+        
+        <script type="text/javascript">
+			var i=0;
+			
+			function ShowMoreMenu()
+			{
+				//alert ("HEllO");
+				var element=document.getElementsByClassName('showhidemenu');
+				if(i%2==0)
+				{
+					for(var index=0;index<element.length;index++)
+					{
+						element[index].style.display="block";
+					}
+			   
+				}
+				else
+				{
+					for(var index=0;index<element.length;index++)
+					{
+						element[index].style.display="none";
+					}
+				}
+				i++;
+			}
+			
+			function newRole()
+			{
+				window.location.assign("CreateNewRole.html")
+			}
+			
+		</script>
+        
+    </head>
+    
+    <body background="../img/fabric_plaid.png">
+    	
+        <!-- Start of Banner -->
+        <div class="row-fluid header_bckgnd">
+        	
+            <div class="span12 row-fluid">
+            
+            	<div class="span2">
+                	<img src="../img/Dental_logo.jpg" class="image_size">
+                </div>
+                
+                <div class="span10">
+                	<p class="head_l1">Aesthetic Dentistry &amp; Orthodontic</p>
+                    <p class="head_l2">Your Friendly "Digital" dental clinic for the whole family</p>
+                   	<p class="head_l3">Road# 32, House# 5/A, Gulshan- 1, Dhaka- 1212, Cell: 017133-549593, 01191642180</p>
+                </div>
+                 	
+            </div>
+            
+        </div>
+        <!-- End of banner -->
+        
+        <!-- Start of middle banner -->
+        <div class="row-fluid">
+        	<img src="../img/bannar.gif" class="middle_banner">
+        </div>
+        <!-- End of middle banner -->
+        
+        <!--Start of Menu, date, userinfo-->
+        <div class="container-fluid">
+        
+        	<div class="row-fluid">
+            	
+                <div class="span12">
+                	
+                    <!-- side Menu Start -->
+            		<div class="span2" align="center">
+                
+                		<ul class="nav nav-list font_set">
+                        	<li><a href="SuperAdminHome.html" class="side_menu">Home</a></li>
+                        	<li><a href="../css/PatientPage.css" class="side_menu">Patients</a></li>
+                        	<li><a href="PayHistoryParmission.html" class="side_menu">Payment History</a></li>
+                        	<li><a href="#" class="side_menu" onClick="ShowMoreMenu();">Admin Panel</a></li>
+                        
+                        	<li class="showhidemenu active"><a href="" class="side_menu1">Manage Role</a></li>
+                        	<li class="showhidemenu"><a href="CreateUser.html" class="side_menu1">Create User</a></li>
+                        	<li class="showhidemenu"><a href="ChangePassword.html" class="side_menu1">Change Pass</a></li>    
+                    	</ul>
+                	</div>
+                    <!-- side Menu End -->
+                    
+                    <div class="span10 button_div">
+						
+						<!-- Start of date button -->
+                    	<div class="row-fluid dir_link">
+                        	<p><button class="btn btn-link font_set">Home</button>
+                    		<span>&raquo;</span>
+                    		<button class="btn btn-link font_set">Manage Role</button>
+                    		</p>
+                        </div>
+                        <!-- End of date button -->
+						
+                        <!-- Start of userinfo -->
+                        <div class="row-fluid font_set user_info_div">
+                        
+                            <div style="border:groove">
+                                <img src="../img/doctor-icon.png" width="70px">
+                            </div>
+                            
+                            <div>
+                                <h5 class="doc_name">DR. Rolly</h5>
+                                <label class="user_roll">Super Admin</label>
+                                <a href="../LogIn.html" class="btn btn-mini btn-primary logout_btn">Logout</a>
+                            </div>
+                                
+                        </div>
+                        <!-- End of userinfo -->
+                        
+                       	<!-- Start of patient schedule -->
+                        
+                       	<div class="row-fluid patient_list_div font_set">
+                            
+                        	<div class="span12" style="border:groove; padding:10px 10px 10px 10px">
+                            
+                            	<div class="span1">
+                                    <label><b>Del</b></label>
+                                    <br><br>
+                                    <p><input type="checkbox" name="" value="" id=""></p>
+                                    <p><input type="checkbox" name="" value="" id=""></p>
+                                    <p><input type="checkbox" name="" value="" id=""></p>
+                                </div>
+                                
+                                <div class="span3">
+                                    <label class="role_div"><b>Role</b></label>
+                                    <br><br>
+                                    <p><label class="role_div1">Super Admin</label></p>
+                                    <p><label class="role_div1">Moderator</label></p>
+                                    <p><label class="role_div1">Doctor</label></p>
+                                </div>
+                                
+                                <div class="span8">
+                                    <label class="permission_div"><b>Permissions</b></label>
+                                    <table cellpadding="15px" class="permission_div1">
+                                        <tr>
+                                            <td><b>Print</b></td>
+                                            <th><b>View Payment</b></th>
+                                            <th><b>Prescribe</b></th>
+                                            <th><b>Manage Scheduling</b></th>
+                                        </tr>
+                                        <tr align="center">
+                                            <td><input type="checkbox" name="" value="" id=""></td>
+                                            <td><input type="checkbox" name="" value="" id=""></td>
+                                            <td><input type="checkbox" name="" value="" id=""></td>
+                                            <td><input type="checkbox" name="" value="" id=""></td>
+                                        </tr>
+                                        <tr align="center">
+                                            <td><input type="checkbox" name="" value="" id=""></td>
+                                            <td><input type="checkbox" name="" value="" id=""></td>
+                                            <td><input type="checkbox" name="" value="" id=""></td>
+                                            <td><input type="checkbox" name="" value="" id=""></td>
+                                        </tr>
+                                        <tr align="center">
+                                            <td><input type="checkbox" name="" value="" id=""></td>
+                                            <td><input type="checkbox" name="" value="" id=""></td>
+                                            <td><input type="checkbox" name="" value="" id=""></td>
+                                            <td><input type="checkbox" name="" value="" id=""></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            	
+                                <div class="form-inline button_div" align="right">
+                                    <button class="btn btn-primary" value="">Update</button>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <button class="btn btn-primary" onClick="newRole()">Create New role</button>
+                                </div>
+                                
+                            </div>
+                                   
+                        </div>
+                        
+                        <!------------------------------------------------------------------------------------>
+               
+						
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--Start of Menu, date, userinfo-->
+                
+	</body>
+
+</html>
